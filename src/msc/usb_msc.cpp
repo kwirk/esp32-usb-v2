@@ -239,5 +239,12 @@ TU_ATTR_WEAK void tud_msc_write10_complete_cb(uint8_t lun)
 	}
 }
 
+bool tud_msc_is_writable_cb (uint8_t lun)
+{
+  (void) lun;
+
+  return false;
+}
+
 // #endif // CONFIG_TINYUSB_MSC_ENABLED
 // #endif // CONFIG_TINYUSB
